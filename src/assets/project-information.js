@@ -22,6 +22,10 @@ const project1 = {
             text: 'Firebase',
             icon: 'firebase'
         },
+        {
+            text: 'Google Search API',
+            icon: 'google'
+        },
     ],
 }
 
