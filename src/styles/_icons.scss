@@ -1,0 +1,24 @@
+@import './variables';
+
+.svg-icon {
+    width: 70px;
+    filter: grayscale(1);
+    transition: all 0.4s ease;
+    &:hover {
+        filter: grayscale(0);
+    }
+}
+
+.icon-container {
+    @include flex(flex-start, center);
+}
+
+.icon-wrapper {
+    @include flex(center, center);
+    flex-direction: column;
+    height: 80px;
+    width: 80px;
+    div {
+        margin-top: 5px;
+    }
+}
