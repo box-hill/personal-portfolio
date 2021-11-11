@@ -17,10 +17,14 @@
 
 .icon-container {
     @include flex(flex-start, center);
+
 }
 
 .icon-text {
     opacity: 0;
+    position: fixed;
+    transform: translateY(50px);
+    background: white;
     transition: opacity 0.5s ease-in-out;
 }
 
