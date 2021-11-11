@@ -7,3 +7,32 @@
     box-sizing: border-box;
     font-family:'Roboto', Arial, Helvetica, sans-serif;
 }
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+section {
+    overflow: hidden;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.project-section {
+    padding: 30px;
+    div {
+        line-height: 1.8;
+        
+    }
+}
+
+.project-image {
+    float: right;
+    width: 60%;
+    padding: 30px;
+}

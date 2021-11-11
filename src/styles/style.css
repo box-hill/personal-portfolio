@@ -32,7 +32,7 @@
 
 .icon-text {
   opacity: 0;
-  position: fixed;
+  position: absolute;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
   -webkit-transition: opacity 0.5s ease-in-out;
@@ -65,5 +65,34 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+section {
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.project-section {
+  padding: 30px;
+}
+
+.project-section div {
+  line-height: 1.8;
+}
+
+.project-image {
+  float: right;
+  width: 60%;
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 const project1 = {
     title: 'Japanese Sentence Searcher',
-    imgUrl: '#',
+    imgUrl: './project1.png',
+    description: 'A powerful Japanese sentence search engine, capable of generating sentences from long complex phrases.',
+    motivation: 'Many popular Japanese sentence searchers are great at generating sentences from one word searches, but fail once that word is turned into a phrase. My goal was to create a language learning tool that wasn’t limited by a traditional dictionary API/database query search.',
     madeWith: [
         {
             text: 'HTML5',
@@ -31,7 +33,7 @@ const project1 = {
 
 const project2 = {
     title: 'Food Ordering Website',
-    imgUrl: '#',
+    imgUrl: './project2.png',
     madeWith: [
         {
             text: 'HTML5',
