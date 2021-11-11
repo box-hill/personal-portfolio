@@ -17,6 +17,7 @@
 .icon-container {
     @include flex(flex-start, center);
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .icon-text {
@@ -29,8 +30,8 @@
 .icon-wrapper {
     @include flex(center, center);
     flex-direction: column;
-    height: 90px;
-    width: 100px;
+    height: 80px;
+    width: 70px;
     div {
         margin-top: 5px;
     }

@@ -30,6 +30,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .icon-text {
@@ -55,8 +56,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 90px;
-  width: 100px;
+  height: 80px;
+  width: 70px;
 }
 
 .icon-wrapper div {
@@ -100,6 +101,28 @@ h4 {
 .project-section p {
   line-height: 1.8;
   margin-bottom: 40px;
+}
+
+.project-section button {
+  font-size: 1.3em;
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  background: transparent;
+  padding: 10px 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.project-section button:hover {
+  background: black;
+  color: white;
+}
+
+.project-section button svg {
+  margin-left: 0.5em;
+  font-size: 0.8em;
 }
 
 .project-image {

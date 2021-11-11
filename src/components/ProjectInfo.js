@@ -1,5 +1,7 @@
 import React from 'react';
 import IconWrapper from './IconWrapper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 
 function ProjectInfo(props) {
   const { project } = props;
@@ -19,6 +21,8 @@ function ProjectInfo(props) {
           )
         })}
       </div>
+      <button>Live Demo <FontAwesomeIcon icon={faExternalLinkAlt}/></button>
+      <button>Github Code <FontAwesomeIcon icon={faExternalLinkAlt}/></button>
     </div>
   );
 }
