@@ -4,7 +4,7 @@ function IconWrapper(props) {
     return (
       <div className='icon-wrapper'>
         <img className='svg-icon' src={svgUrl} alt={text}/>
-        <div>{text}</div>
+        <div className='icon-text'>{text}</div>
       </div>
     )
 }
