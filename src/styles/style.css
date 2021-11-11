@@ -10,6 +10,12 @@
 .svg-icon:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.svg-icon:hover + .icon-text {
+  opacity: 1;
 }
 
 .icon-container {
@@ -22,6 +28,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.icon-text {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .icon-wrapper {
@@ -38,8 +50,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 100px;
 }
 
 .icon-wrapper div {
