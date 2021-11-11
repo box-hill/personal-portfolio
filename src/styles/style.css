@@ -35,7 +35,6 @@
   position: fixed;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
-  background: white;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
