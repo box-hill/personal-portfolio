@@ -6,10 +6,11 @@
 * {
     box-sizing: border-box;
     font-family:'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-size: 16px;
 }
 
@@ -21,13 +22,21 @@ section {
 h3 {
     font-size: 1.7em;
     font-weight: 400;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.45em;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .project-section {
     padding: 30px;
-    div {
+    color: $font-color;
+    p {
         line-height: 1.8;
-        
+        margin-bottom: 40px;
     }
 }
 
@@ -35,4 +44,12 @@ h3 {
     float: right;
     width: 60%;
     padding: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .project-image {
+        float: none;
+        width: 100%;
+        display: block;
+    }
 }
