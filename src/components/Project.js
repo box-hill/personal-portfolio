@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProjectInfo from './ProjectInfo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 
 function Project(props) {
