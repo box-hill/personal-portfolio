@@ -9,7 +9,6 @@ function Navbar() {
     }
     window.addEventListener('resize', () => {
       sticky = navbar.offsetTop;
-      console.log(sticky);
     })
     function stickNavBar() {
       if(window.pageYOffset >= sticky) {
@@ -23,6 +22,7 @@ function Navbar() {
 
   return (
     <nav id='navbar'>
+      <div>Aaron Lim</div>
       <ul id='navbar-container'>
         <li>Nav items </li>
         <li>Nav items </li>
