@@ -11,8 +11,8 @@ function Project(props) {
 
   return (
     <section className='project-section' style={{background: `${background}`}}>
-        <h3 className='project-title'>
-          <FontAwesomeIcon onClick={() => setHidden(!hidden)} icon={faChevronRight} className={hidden ? 'rotate-left' : 'rotate-right'}/>
+        <h3 className='project-title' onClick={() => setHidden(!hidden)}>
+          <FontAwesomeIcon icon={faChevronRight} className={hidden ? 'rotate-left' : 'rotate-right'}/>
           {title}
         </h3>
         {hidden ? null : 

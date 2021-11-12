@@ -72,6 +72,39 @@
   padding: 0;
 }
 
+#navbar {
+  z-index: 1;
+  width: 100%;
+  height: 60px;
+  background-image: linear-gradient(45deg, #181818 60%, #313131 75%);
+  color: white;
+}
+
+#navbar-container {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + section {
+  padding-top: 90px;
+}
+
 body {
   font-size: 16px;
 }
@@ -90,8 +123,8 @@ section {
 }
 
 .slide-in {
-  -webkit-animation: slide-in 0.6s;
-          animation: slide-in 0.6s;
+  -webkit-animation: 0.5s slide-in;
+          animation: 0.5s slide-in;
 }
 
 @-webkit-keyframes slide-in {
@@ -120,9 +153,36 @@ section {
   }
 }
 
+.slide-in-right {
+  -webkit-animation: 0.9s slide-in-right;
+          animation: 0.9s slide-in-right;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .rotate-left {
-  -webkit-animation: rotate-left 0.3s forwards;
-          animation: rotate-left 0.3s forwards;
+  -webkit-animation: 0.3s rotate-left forwards;
+          animation: 0.3s rotate-left forwards;
 }
 
 @-webkit-keyframes rotate-left {
@@ -148,8 +208,8 @@ section {
 }
 
 .rotate-right {
-  -webkit-animation: rotate-right 0.3s forwards;
-          animation: rotate-right 0.3s forwards;
+  -webkit-animation: 0.3s rotate-right forwards;
+          animation: 0.3s rotate-right forwards;
 }
 
 @-webkit-keyframes rotate-right {
@@ -240,6 +300,16 @@ h4 {
     float: none;
     width: 100%;
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-section a {
+    font-size: 1.1em;
+    padding: 10px 10px;
+  }
+  h1 {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

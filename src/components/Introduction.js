@@ -3,7 +3,7 @@ import React from 'react';
 function Introduction() {
   return (
     <section>
-        <h1>
+        <h1 className='slide-in-right'>
         Bringing ideas to life is my passion
         <br/>
         consectetur adipiscing elit. 
