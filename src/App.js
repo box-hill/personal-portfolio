@@ -2,7 +2,7 @@ import './styles/style.css';
 import Introduction from './components/Introduction';
 import Navbar from './components/Navbar';
 import Project from './components/Project';
-import { project1, project2, project3 } from './assets/project-information';
+import { project1, project2, project3, project4 } from './assets/project-information';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Project project={project1}/>
       <Project project={project2}/>
       <Project project={project3}/>
+      <Project project={project4}/>
     </div>
   );
 }

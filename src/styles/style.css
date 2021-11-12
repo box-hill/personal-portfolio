@@ -103,7 +103,9 @@ h4 {
   margin-bottom: 40px;
 }
 
-.project-section button {
+.project-section a {
+  text-decoration: none;
+  color: inherit;
   font-size: 1.3em;
   border: 1px solid #333;
   border-radius: 3px;
@@ -115,12 +117,12 @@ h4 {
   transition: all 0.3s ease;
 }
 
-.project-section button:hover {
+.project-section a:hover {
   background: black;
   color: white;
 }
 
-.project-section button svg {
+.project-section a svg {
   margin-left: 0.5em;
   font-size: 0.8em;
 }
