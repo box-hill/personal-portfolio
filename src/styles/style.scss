@@ -2,6 +2,7 @@
 
 @import './icons';
 @import './variables';
+@import './animations';
 
 * {
     box-sizing: border-box;
@@ -10,13 +11,26 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: $font-color;
+}
+
 #navbar {
     z-index: 1;
     width: 100%;
     height: $navbar-height;
-    background-image: linear-gradient(45deg, darken($navbar-color, 10%) 60%, $navbar-color 75%);
+    background-image: linear-gradient(45deg, darken($navbar-color, 13%) 63%, $navbar-color 75%);
     color: white;
+    border-top: 4px solid $navbar-accent;
+    padding: 0px $padding-size;
+    @include flex(space-around, center);
+    div {
+        width: 100px;
+        font-size: 1.4em;
+    }
 }
+
 #navbar-container {
     list-style: none;
     height: 100%;
@@ -41,71 +55,25 @@ body {
 
 h1 {
     font-size: 2.3em;
-    color: $font-color;
     line-height: 1.4;
     font-weight: 500;
-    padding-left: $padding-size;
+    padding: 120px $padding-size;
 }
 
-section {
+#intro-section {
     overflow: hidden;
     margin: 0;
-}
-
-.slide-in {
-    animation: 0.5s slide-in;
-}
-
-@keyframes slide-in {
-    0% {
-        opacity: 0;
-        transform: translateY(30px)
+    color: $font-color;
+    #first-name {
+        color: $navbar-accent;
+        margin-right: 0;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0%)
+    span {
+        display: inline-block;
+        margin-right: 0.25em;
     }
 }
 
-.slide-in-right {
-    animation: 0.9s slide-in-right;
-}
-
-@keyframes slide-in-right {
-    0% {
-        transform: translateX(-30px);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-
-.rotate-left {
-    animation: 0.3s rotate-left forwards;
-}
-
-@keyframes rotate-left {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
-}
-
-.rotate-right {
-    animation: 0.3s rotate-right forwards;
-}
-
-@keyframes rotate-right {
-    0% {
-        transform: rotate(90deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-}
 h3 {
     font-size: 1.7em;
     font-weight: 400;
@@ -132,7 +100,6 @@ h4 {
         margin-bottom: 40px;
     }
     a {
-        text-decoration: none;
         color: inherit;
         font-size: 1.3em;
         border: 1px solid $font-color;
@@ -173,6 +140,10 @@ h4 {
             font-size: 1.1em;
             padding: 10px 10px;
         }
+    }
+    #intro-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
     h1 {
         font-size: 1.5em;
