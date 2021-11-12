@@ -1,6 +1,6 @@
 function IconWrapper(props) {
     const { text, icon } = props.framework;
-    const svgUrl = `https://www.vectorlogo.zone/logos/${icon}/${icon}-icon.svg`
+    const svgUrl = icon
     return (
       <div className='icon-wrapper'>
         <img className='svg-icon' src={svgUrl} alt={text}/>

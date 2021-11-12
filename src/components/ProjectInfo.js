@@ -5,7 +5,7 @@ import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
 
 function ProjectInfo(props) {
   const { project } = props;
-  const { madeWith, description, motivation } = project;
+  const { madeWith, description, motivation, demoUrl, githubUrl } = project;
 
   return (
     <div className='project-info'>
@@ -21,8 +21,8 @@ function ProjectInfo(props) {
           )
         })}
       </div>
-      <button>Live Demo <FontAwesomeIcon icon={faExternalLinkAlt}/></button>
-      <button>Github Code <FontAwesomeIcon icon={faExternalLinkAlt}/></button>
+      {demoUrl ? <a href={demoUrl} target='none'>Live Demo <FontAwesomeIcon icon={faExternalLinkAlt}/></a> : null}
+      <a href={githubUrl} target='none'>Github Code <FontAwesomeIcon icon={faExternalLinkAlt}/></a>
     </div>
   );
 }
