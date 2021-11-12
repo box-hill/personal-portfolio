@@ -128,7 +128,7 @@ h4 {
 .project-image {
   float: right;
   width: 60%;
-  padding: 30px;
+  padding: 0px 30px 30px 30px;
 }
 
 @media screen and (max-width: 1200px) {
