@@ -4,7 +4,7 @@ function Introduction() {
   return (
     <section>
         <h1>
-        Lorem ipsum dolor sit amet, 
+        Bringing ideas to life is my passion
         <br/>
         consectetur adipiscing elit. 
         <br/>

@@ -76,15 +76,117 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-size: 2.3em;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
 section {
   overflow: hidden;
   margin: 0;
 }
 
+.slide-in {
+  -webkit-animation: slide-in 0.6s;
+          animation: slide-in 0.6s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.rotate-left {
+  -webkit-animation: rotate-left 0.3s forwards;
+          animation: rotate-left 0.3s forwards;
+}
+
+@-webkit-keyframes rotate-left {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-left {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.rotate-right {
+  -webkit-animation: rotate-right 0.3s forwards;
+          animation: rotate-right 0.3s forwards;
+}
+
+@-webkit-keyframes rotate-right {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 h3 {
   font-size: 1.7em;
   font-weight: 400;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+h3 .fa-chevron-right {
+  margin-right: 30px;
+}
+
+h3 .fa-chevron-right:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 h4 {
