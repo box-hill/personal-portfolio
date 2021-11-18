@@ -24,7 +24,7 @@ function Navbar() {
     <nav id='navbar'>
       <ul id='navbar-container'>
         <li><a href="#intro-section">Introduction</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="https://github.com/box-hill">Github</a></li>
         <li><a href="mailto:aaronlim314@gmail.com">Contact Me</a></li>
       </ul>
     </nav>
