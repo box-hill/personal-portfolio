@@ -73,7 +73,7 @@ const project2 = {
 const project3 = {
     title: 'Personal Portfolio',
     background: '#ececec',
-    imgUrl: '#',
+    imgUrl: './portfolio.png',
     githubUrl: 'https://github.com/box-hill/personal-portfolio',
     description: 'My personal portfolio of projects.',
     motivation: 'To create reusable React components that will allow me to easily update my portfolio in the future.',
