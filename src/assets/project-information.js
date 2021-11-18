@@ -38,8 +38,8 @@ const project2 = {
     title: 'Food Ordering Website',
     background: '#dddddd',
     imgUrl: './project2.png',
-    demoUrl: 'https://github.com/box-hill/order-with-me',
-    githubUrl: 'https://box-hill.github.io/order-with-me/#/',
+    demoUrl: 'https://box-hill.github.io/order-with-me/#/',
+    githubUrl: 'https://github.com/box-hill/order-with-me',
     description: 'A food ordering collaboration website where users can place orders to their table, view the pending orders and see what others on the same table have ordered. Orders can also be marked as complete from the restaurant kitchen.',
     motivation: 'To create a website that is capable of helping small businesses/restaurants by using Firebase realtime database as the backend service.',
     madeWith: [
