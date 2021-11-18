@@ -411,6 +411,7 @@ h4 {
 .project-section {
   padding: 30px;
   color: #333;
+  overflow: hidden;
 }
 
 .project-section p {

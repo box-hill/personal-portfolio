@@ -95,6 +95,7 @@ h4 {
 .project-section {
     padding: $padding-size;
     color: $font-color;
+    overflow: hidden;
     p {
         line-height: 1.8;
         margin-bottom: 40px;
