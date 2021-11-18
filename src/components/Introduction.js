@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import React from 'react';
 
 function Introduction() {
-  const [ hidden, setHidden ] = useState(true);
 
   return (
     <section id='intro-section'>
