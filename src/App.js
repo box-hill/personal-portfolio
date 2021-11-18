@@ -9,12 +9,10 @@ function App() {
     <div>
       <Introduction></Introduction>
       <Navbar></Navbar>
-      <div id='projects'>
-        <Project project={project1}/>
-        <Project project={project2}/>
-        <Project project={project3}/>
-        <Project project={project4}/>
-      </div>
+      <Project project={project1}/>
+      <Project project={project2}/>
+      <Project project={project3}/>
+      <Project project={project4}/>
     </div>
   );
 }
