@@ -330,15 +330,34 @@ a {
           align-items: center;
 }
 
-#navbar div {
-  width: 100px;
-  font-size: 1.4em;
+#navbar a {
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#navbar a:hover {
+  color: #cc0000;
 }
 
 #navbar-container {
   list-style: none;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar-container li {
+  height: 100%;
+  padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

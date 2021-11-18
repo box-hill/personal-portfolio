@@ -25,9 +25,12 @@ a {
     border-top: 4px solid $navbar-accent;
     padding: 0px $padding-size;
     @include flex(space-around, center);
-    div {
-        width: 100px;
-        font-size: 1.4em;
+    a {
+        color: white;
+        transition: all 0.5s ease;
+        &:hover {
+            color: $navbar-accent;
+        }
     }
 }
 
@@ -35,7 +38,13 @@ a {
     list-style: none;
     height: 100%;
     width: 100%;
-    @include flex(center, center);
+    @include flex(flex-end, center);
+    li {
+        height: 100%;
+        padding: 0px 10px;
+        @include flex(center, center);
+        
+    }
 }
 
 .sticky {

@@ -22,11 +22,10 @@ function Navbar() {
 
   return (
     <nav id='navbar'>
-      <div>Aaron Lim</div>
       <ul id='navbar-container'>
-        <li>Nav items </li>
-        <li>Nav items </li>
-        <li>Nav items </li>
+        <li><a href="#intro-section">Introduction</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="mailto:aaronlim314@gmail.com">Contact Me</a></li>
       </ul>
     </nav>
   );
