@@ -369,16 +369,6 @@ a {
           align-items: center;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + section {
-  padding-top: 90px;
-}
-
 body {
   font-size: 16px;
 }
@@ -465,6 +455,16 @@ h4 {
   float: right;
   width: 60%;
   padding: 0px 30px 30px 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + section {
+  padding-top: 90px;
 }
 
 @media screen and (max-width: 1200px) {

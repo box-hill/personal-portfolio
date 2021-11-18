@@ -47,17 +47,6 @@ a {
     }
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + section {
-    padding-top: $navbar-height + $padding-size;
-}
-
-
 body {
     font-size: 16px;
 }
@@ -134,6 +123,16 @@ h4 {
     float: right;
     width: 60%;
     padding: 0px $padding-size $padding-size $padding-size;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + section {
+    padding-top: $navbar-height + $padding-size;
 }
 
 @media screen and (max-width: 1200px) {
